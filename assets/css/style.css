@@ -89,14 +89,6 @@ body{
     font-weight: 700;
 }
 
-@media (max-width: 768px){
-    .hero-img{ height: 48vh; }
-    .hero-title{ font-size: 1.4rem; }
-    .search-card{ padding: 12px; }
-    .search-row{ flex-direction: column; }
-    .search-submit{ width: 100%; }
-}
-
 .section-heading{
     color: #8993A4;
     font-size: 12px;
@@ -138,11 +130,6 @@ body{
     font-size: 12px;
     color: #4b5563;
     text-align: center;
-}
-
-@media (max-width: 480px){
-    .property-item img{ width: 100px; height: 68px; }
-    .property-item{ min-width: 100px; }
 }
 
 .properties-strip{
@@ -208,6 +195,7 @@ body{
 }
 
 .tool-option{
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,4 +220,74 @@ body{
     background-color: #FFFBF3;
     padding-left: 20px;
 
+}
+
+.tool-caption{
+    padding: 10px;
+}
+
+.section-subheading{
+    color: #041533;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+    margin: 18px 0;
+    padding: 10px;
+}
+
+.tcs-title{
+    font-size: 12px;
+    font-weight: 700;
+    color: #8993A4;
+    margin-top: 82px;
+}
+
+.tcs-subtitle{
+    font-size: 28px;
+    font-weight: 700;
+    color: #091E42;
+}
+
+.tcs-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #42526E;
+}
+
+.tcs-button{
+    padding: 16px 24px;
+    background: #0078DB;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.tcs-section{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    width: 80%;
+    margin: 80px auto;
+}
+
+.tcs-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sub-wrap{
+    margin: auto 45.5px;
+}
+
+.page-component{
+    background-color: #F0F9FF;
+    margin: 20px 109px;
+    padding: 18px 24px 32px;
+    border-radius: 10px;
 }
