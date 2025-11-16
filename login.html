@@ -10,9 +10,9 @@
 <body>
     <header class="header">
         <div class="header-div">
-            <nav class="nav" style="height:75px; display: flex; align-items: center; gap: 20px;justify-content: space-around; background-color: #f1f1f1eb;">
+            <nav class="nav" style="height:60px; display: flex; align-items: center; gap: 20px;justify-content: space-around; background-color: #f1f1f1eb;">
                 <div class="logo-div" style="display: flex; align-items: center; gap: 10px;">
-                    <img src="assets/images/logo.png" alt="logo" style="width: 50px; margin-left: 25px;">
+                    <img src="assets/images/logo.png" alt="logo" style="width: 50px; margin-left: 25px;border-radius: 4px;">
                     <div>
                         <h3 style="color: #0078DB;"> urbanvista </h3>
                     </div>
@@ -26,117 +26,17 @@
     </header>
     <section>
        <div class="login-wrapper">
-            <div class="login-card">
-                <h2 class="login-title">Login as</h2>
-                
-            </div>
+        <h2>Login </h2>
+        <hr>
+        <label for="email">Email ID / Mobile</label>
+        <input type="text" id="email" style="padding-left:15px ;" placeholder="Enter valid Email ID or Mobile Number">
+        <button><a href="index.html" style="text-decoration: none;color: #fff;">Continue &#8594;</a> </button>
+        <p style="color: #666;">OR</p>
+        <div style="border: 2px solid #7bbef4;padding: 15px 45px;text-align: center;border-radius: 4px;background-color: #f8fbff;">
+            <p>Don't have a Urbanvista account ?</p>
+            <a href="#" style="text-align: center;color: #1e88e5;">Register Now</a>
+        </div>
        </div>
     </section>
 </body>
 </html>
-
-
-
- <!-- login card start -->
-        <!-- <style>
-            .login-wrapper{
-                min-height: calc(100vh - 75px);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 28px;
-            }
-            .login-card{
-                width: 100%;
-                max-width: 420px;
-                background: #ffffff;
-                border-radius: 12px;
-                box-shadow: 0 12px 36px rgba(2,6,23,0.08);
-                padding: 28px;
-                box-sizing: border-box;
-            }
-            .login-card h2{
-                margin-bottom: 8px;
-                font-size: 1.25rem;
-                color: #0b2340;
-            }
-            .login-card p.lead{
-                margin-bottom: 18px;
-                font-size: 0.95rem;
-                color: #6b7280;
-            }
-            .form-group{
-                margin-bottom: 12px;
-                display: flex;
-                flex-direction: column;
-                gap: 6px;
-            }
-            .form-group label{
-                font-size: 0.85rem;
-                color: #374151;
-            }
-            .form-group input{
-                padding: 10px 12px;
-                border-radius: 8px;
-                border: 1px solid #e5e7eb;
-                font-size: 0.95rem;
-                outline: none;
-            }
-            .form-group input:focus{
-                box-shadow: 0 0 0 4px rgba(0,120,219,0.08);
-                border-color: #0078DB;
-            }
-            .actions{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 12px;
-                margin-top: 12px;
-            }
-            .login-btn{
-                background: #0078DB;
-                color: #fff;
-                border: none;
-                padding: 10px 16px;
-                border-radius: 8px;
-                cursor: pointer;
-                font-weight: 700;
-            }
-            .login-btn:hover{ opacity: 0.95; }
-            .text-link{
-                font-size: 0.9rem;
-                color: #1c58ff;
-                text-decoration: none;
-            }
-
-            /* responsive */
-            @media (max-width: 480px){
-                .login-card{ padding: 20px; border-radius: 10px; }
-                .login-wrapper{ padding: 18px; }
-            }
-        </style>
-
-        <div class="login-wrapper">
-            <div class="login-card" role="form" aria-labelledby="login-title">
-                <h2 id="login-title">Member Login</h2>
-                <p class="lead">Sign in to access your dashboard and manage listings.</p>
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input id="email" type="email" placeholder="you@example.com" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input id="password" type="password" placeholder="••••••••" required>
-                </div>
-
-                <div class="actions">
-                    <button class="login-btn" type="submit">Log In</button>
-                    <div style="margin-left:auto; display:flex; align-items:center; gap:8px;">
-                        <a class="text-link" href="#">Forgot?</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- login card end -->

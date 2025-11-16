@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header-button-about-css{
+    border: 0px solid #0078DB;
+    background-color: #0078DB;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px 12px;
+    font-size: 15px;
+}
+.header-button-about-css a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.aboutus-logo{
+    background-color: #f0f9ff;
+    width: 90%;
+    text-align: center;
+    margin: 70px ;
+    padding: 40px;
+    border-radius: 10px;
+}
+.aboutus-paragraph{
+    width: 100%;
+    margin: auto;
+    color: #253858;
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.aboutus-section{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-div{
+    padding: 30px 350px;
+}
+.award-item{
+    display: flex;
+    gap: 7px;
+}
+.award-section{
+    font-weight: 100;
+}
+
+.connect{
+    margin-top: 40px;
+}
+.social-media-logo{
+    margin-top: 10px;
+}
+.connect-txt{
+    margin-bottom: 10px;
+    color: #8993A4;
+}
+.footer{
+    padding: 56px 16px;
+    background-color: #151c22;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+}
+.footerwrapper{
+    margin: 0px 14.5px;
+    gap: 100px;
+
+}
+.footer-heading{
+    margin: 0px 0px 16px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+
+}
+.leftfooter{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.footer{
+	color: #fff;
+	padding: 36px 16px;
+}
+.footerwrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	gap: 24px;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.leftfooter{ display:flex; gap: 28px; flex-wrap: wrap; }
+.leftfooter-list{ min-width: 160px; }
+.footer-heading{ font-weight: 700; margin-bottom: 8px; }
+.footer-list ul{ padding: 0; margin: 0; list-style: none; }
+.footer-list li{ margin-bottom: 10px; }
+.footer-list a{ color: #f3f4f6; text-decoration: none; font-size: 14px; }
+.footer-list a:hover{ text-decoration: underline; }
+.rightfooter{ min-width: 220px; }
+
+@media (max-width: 768px){
+	.footerwrapper{ gap: 12px; }
+	.leftfooter{ flex-direction: column; gap: 18px; }
+	.rightfooter{ margin-top: 16px; }
+}
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="stylesheet" href="/assets/css/properties.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <title>Post Free Propoerty | Sell or Rent Property Online</title>
+</head>
+
+<body>
+    <header class="header" style="position: sticky;top: 0;">
+        <div class="header-div">
+            <nav class="nav"
+                style="height:65px; display: flex; align-items: center; gap: 20px;justify-content: space-around; background-color: #f1f1f1eb;">
+                <div class="logo-div" style="display: flex; align-items: center; gap: 10px;">
+                    <img src="assets/images/logo.png" alt="logo"
+                        style="width: 50px; margin-left: 25px;border-radius: 4px;">
+                    <div>
+                        <h3 style="color: #0078DB;"> urbanvista </h3>
+                    </div>
+                </div>
+                <div style="justify-content: center;display: flex;align-items: center;gap: 30px;">
+                    <div><a href="login.html" style="text-decoration: none; color: #666666;"><img
+                                src="/assets/images/login_page/login-profile-photo.png" alt="login"
+                                style="height: 30px;background-color: #dadada; border-radius: 20px; "></a></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="section-div">
+        <div class="section-text">
+            <div class="section-title-text">Sell or Rent Property
+                <br>
+                <span class="section-title-span">Online faster</span> with Urbanvista.com
+            </div>
+            <div class="section-sub-text">
+                <span class="section-span">&#10004; Advertise fof FREE</span><br><br>
+                <span class="section-span">&#10004; Get unlimited enquires</span><br><br>
+                <span class="section-span">&#10004; Get shortlisted buyers and tenants</span><br><br>
+                <span class="section-span">&#10004; Assistance in co-ordinating site visits</span><br>
+                <img src="/assets/images/properties/post_property_img.gif" width="750px" height="500px" alt="#">
+            </div>
+        </div>
+        <div class="postpropertycard">
+            <h2 style="font-weight: 400;">Start posting your property</h2>
+            <p style="color: #586069; font-size: 14px; margin-top: 6px;">Fill the form below to create a listing quickly.</p>
+
+            <form class="property-form" id="property-form" novalidate>
+                <div class="form-row form-row-inline">
+                    <label class="radio-label">I want to</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="purpose" value="sell" checked> Sell</label>
+                        <label><input type="radio" name="purpose" value="rent"> Rent/Lease</label>
+                        <label><input type="radio" name="purpose" value="pg"> PG</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="ptype">Property type</label>
+                    <select id="ptype" name="ptype">
+                        <option>Apartment</option>
+                        <option>Independent House</option>
+                        <option>Plot / Land</option>
+                        <option>Commercial</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="title">Ad title</label>
+                    <input id="title" name="title" placeholder="eg. Spacious 2 BHK near market" />
+                </div>
+
+                <div class="form-row">
+                    <label for="location">Location</label>
+                    <input id="location" name="location" placeholder="City, Locality" />
+                </div>
+
+                <div class="form-row two-col">
+                    <div>
+                        <label for="price">Expected price</label>
+                        <input id="price" name="price" placeholder="e.g. 25 Lakh" />
+                    </div>
+                    <div>
+                        <label for="beds">Bedrooms</label>
+                        <select id="beds" name="beds">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="area">Area (sq ft)</label>
+                    <input id="area" name="area" placeholder="e.g. 1200" />
+                </div>
+
+                <div class="form-row">
+                    <label for="contact">Contact number</label>
+                    <input id="contact" name="contact" placeholder="Mobile number" />
+                </div>
+
+                <div class="form-row">
+                    <button type="submit" class="submit-btn">Post Property</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
