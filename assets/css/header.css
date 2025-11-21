@@ -21,3 +21,19 @@
 .logo{
     border-radius: 4px;
 }
+
+/* Responsive navigation tweaks */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 6px 18px;
+}
+
+@media (max-width: 768px){
+    .nav{ padding: 8px 12px; flex-wrap: wrap; }
+    .nav-links{ display: none; }
+    .header-button{ padding: 6px 10px; font-size: 14px; }
+    .logo-name{ font-size: 18px; }
+}

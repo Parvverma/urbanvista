@@ -21,7 +21,7 @@ body{
 .hero-overlay{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0;       
     right: 0;
     bottom: 0;
     display: flex;
@@ -97,6 +97,9 @@ body{
     margin: 18px 0;
 }
 
+/* Make main content flow within a centered container */
+.site-container{ max-width: 1180px; width: 100%; margin: 0 auto; padding: 0 16px; box-sizing: border-box; }
+
 /* Properties horizontal scroll strip */
 
 .properties-container{
@@ -121,7 +124,9 @@ body{
     gap: 8px;
 }
 .property-item img{
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 6px 18px rgba(12,24,48,0.06);
@@ -137,7 +142,8 @@ body{
     background-color: #fafafa;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
+    overflow-x: auto;
 }
 
 /* properties for the tools section */
@@ -149,9 +155,11 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    width: 80%;
+    width: 100%;
+    max-width: 1180px;
     margin: 20px auto;
     border-radius: 20px;
+    overflow-x: auto;
 }
 
 .tools-section{
@@ -160,7 +168,8 @@ body{
     flex-direction: row;
     align-items: center;
     gap: 12px;
-    width: 80%;
+    width: 100%;
+    max-width: 1100px;
     margin: 40px auto;
     border-radius: 30px;
 }
@@ -271,8 +280,10 @@ body{
     flex-direction: row;
     align-items: center;
     gap: 12px;
-    width: 80%;
+    width: 100%;
+    max-width: 1180px;
     margin: 80px auto;
+    overflow-x: auto;
 }
 
 .tcs-content{
@@ -282,7 +293,7 @@ body{
 }
 
 .sub-wrap{
-    margin: auto 45.5px;
+    margin: auto 24px;
 }
 
 .page-component{
@@ -290,4 +301,34 @@ body{
     margin: 20px 109px;
     padding: 18px 24px 32px;
     border-radius: 10px;
+}
+
+/* Mobile / Tablet breakpoints */
+@media (max-width: 1024px){
+    .hero-img{ height: 50vh; }
+    .hero-title{ font-size: 1.6rem; }
+    .tcs-subtitle{ font-size: 22px; }
+    .section-subheading{ font-size: 28px; }
+    .page-component{ margin: 20px 32px; }
+}
+
+@media (max-width: 768px){
+    .nav-links{ display: none; }
+    .site-container{ padding: 0 12px; }
+    .hero-img{ height: 42vh; }
+    .hero-title{ font-size: 1.4rem; padding: 0 8px; }
+    .search-card{ width: 96%; }
+    .properties-container{ gap: 14px; padding: 8px; }
+    .tool-option{ width: 48%; }
+    .tools-options{ flex-wrap: wrap; justify-content: center; }
+}
+
+@media (max-width: 480px){
+    .hero-img{ height: 36vh; }
+    .hero-title{ font-size: 1.2rem; }
+    .search-card{ width: 100%; padding: 10px; }
+    .option-btn{ padding: 6px 10px; }
+    .tool-option{ width: 100%; }
+    .page-component{ margin: 12px; }
+    .properties-container{ gap: 10px; }
 }

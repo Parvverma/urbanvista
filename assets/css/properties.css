@@ -5,12 +5,23 @@
 body{
     background-image: linear-gradient(white,#d7edfc);
 }
+.header{ position: sticky; top: 0; z-index: 60; }
+.site-nav{ height: 65px; display:flex; align-items:center; justify-content:space-between; gap:16px; background-color: #f1f1f1eb; padding: 0 16px; }
+.logo-div{ display:flex; align-items:center; gap: 10px; }
+.logo-img{ width:48px; height:auto; border-radius:4px; }
+.brand-name{ color: #0078DB; margin-left: 0; font-weight:600; }
+.nav-right{ display:flex; align-items:center; gap:16px; }
+.profile-img{ height:32px; width:32px; object-fit:cover; border-radius:50%; background:#dadada; }
 .section-div{
     margin: 0px 0px -25px;
-    width: 1180px;
-    height: 725.5px;
+    max-width: 1180px;
+    width: 100%;
     margin: 50px auto;
     display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 16px;
 }
 
 .section-title-text{
@@ -33,8 +44,9 @@ body{
     font-weight: 400;
     font-family: Georgia, Times, 'Times New Roman', serif;
 }
+.illustration-img{ max-width: 100%; height: auto; display: block; margin-top: 16px; border-radius: 8px; }
 .postpropertycard{
-    height: 682px;
+    height: auto;
     width: 424px;
     background-color: white;
     border-radius: 10px;
@@ -113,4 +125,25 @@ body{
     .two-col{ 
         flex-direction: column; 
     }
+}
+
+@media (max-width: 768px){
+    .section-div{ padding: 18px; }
+    .section-title-text{ font-size: 26px; }
+    .section-span{ font-size: 16px; }
+    .aboutus-paragraph{ font-size: 15px; padding: 0 6px; }
+    .postpropertycard{ width: 100%; padding: 18px; }
+    .site-nav{ padding: 0 12px; }
+    .section-div{ gap: 12px; }
+}
+
+@media (max-width: 480px){
+    .section-div{ padding: 12px; }
+    .section-title-text{ font-size: 22px; }
+    .aboutus-logo{ margin: 16px 8px; padding: 16px; }
+    .postpropertycard{ padding: 14px; }
+    .submit-btn{ padding: 12px; }
+    .brand-name{ font-size: 16px; }
+    .logo-img{ width:40px; }
+    .profile-img{ width:28px; height:28px; }
 }

@@ -36,7 +36,7 @@
     align-items: center;
 }
 .main-div{
-    padding: 30px 350px;
+    padding: 30px 120px;
 }
 .award-item{
     display: flex;
@@ -110,5 +110,25 @@
 	.footerwrapper{ gap: 12px; }
 	.leftfooter{ flex-direction: column; gap: 18px; }
 	.rightfooter{ margin-top: 16px; }
+}
+
+@media (max-width: 1024px){
+    .main-div{ padding: 28px 48px; }
+    .aboutus-logo{ margin: 40px 12px; width: auto; padding: 28px; }
+    .aboutus-paragraph{ font-size: 16px; }
+}
+
+@media (max-width: 768px){
+    .main-div{ padding: 18px 18px; }
+    .aboutus-logo{ margin: 24px 8px; padding: 20px; }
+    .aboutus-paragraph{ font-size: 15px; }
+    .aboutus-logo img{ max-width: 160px; height: auto; }
+    .leftfooter{ gap: 12px; }
+}
+
+@media (max-width: 480px){
+    .aboutus-logo{ padding: 16px; }
+    .aboutus-paragraph{ font-size: 14px; }
+    .award-item{ flex-direction: column; gap: 6px; }
 }
 
