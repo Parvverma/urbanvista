@@ -50,7 +50,7 @@
             <h2 style="font-weight: 400;">Start posting your property</h2>
             <p style="color: #586069; font-size: 14px; margin-top: 6px;">Fill the form below to create a listing quickly.</p>
 
-            <form class="property-form" id="property-form" novalidate>
+            <div class="property-form" id="property-form" novalidate>
                 <div class="form-row form-row-inline">
                     <label class="radio-label">I want to</label>
                     <div class="radio-group">
@@ -72,18 +72,18 @@
 
                 <div class="form-row">
                     <label for="title">Ad title</label>
-                    <input id="title" name="title" placeholder="eg. Spacious 2 BHK near market" />
+                    <input id="title" class="error" name="title" placeholder="eg. Spacious 2 BHK near market" />
                 </div>
 
                 <div class="form-row">
                     <label for="location">Location</label>
-                    <input id="location" name="location" placeholder="City, Locality" />
+                    <input id="location" class="error" name="location" placeholder="City, Locality" />
                 </div>
 
                 <div class="form-row two-col">
                     <div>
                         <label for="price">Expected price</label>
-                        <input id="price" name="price" placeholder="e.g. 25 Lakh" />
+                        <input id="price" name="price" class="error" placeholder="e.g. 25 Lakh" />
                     </div>
                     <div>
                         <label for="beds">Bedrooms</label>
@@ -98,20 +98,23 @@
 
                 <div class="form-row">
                     <label for="area">Area (sq ft)</label>
-                    <input id="area" name="area" placeholder="e.g. 1200" />
+                    <input id="area" name="area" class="error" placeholder="e.g. 1200" />
                 </div>
 
                 <div class="form-row">
                     <label for="contact">Contact number</label>
-                    <input id="contact" name="contact" placeholder="Mobile number" />
+                    <input id="contact" name="contact" class="error" placeholder="Mobile number" />
                 </div>
 
+                <p id="invalid"></p>
+
                 <div class="form-row">
-                    <button type="submit" class="submit-btn">Post Property</button>
+                    <button id="submit-btn" class="submit-btn">Post Property</button>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
+    <script src="/assets/js/properties.js"></script>
 </body>
 
 </html>
